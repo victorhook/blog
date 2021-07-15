@@ -1,0 +1,11 @@
+{
+    "name": "Jekyll Tags Front Matter",
+    "scope": [
+      "punctuation.output.jekyll",
+      "punctuation.tag.jekyll",
+      "frontmatter.jekyll"
+    ],
+    "settings": {
+      "foreground": "#SOME_COLOR_YOU_LINK"
+    }
+}

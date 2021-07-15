@@ -1,0 +1,157 @@
+:root {
+    --dark: #171717;
+    --dark-hover: #313131;
+    --light-dark: #444444;
+    --light-dark-hover:rgb(109, 105, 105);
+    --red: rgb(105, 0, 0);
+    --white-dark: #c7c7c7;
+    --white: #e2e2e2;
+    --white-hover: #ffffff;
+    --dash: rgb(71, 71, 71);
+}
+
+body {
+    background-color: var(--dark);
+    height: 100vh;
+}
+
+img {
+    width: 100%;
+}
+
+h1, h2, h3, h4, h5, h6, a, p {
+    color: var(--white);
+}
+
+
+content {
+    margin-top: 2em;
+}
+
+/* Navbar */
+.navbar {
+    background-color: var(--red) !important;
+    box-shadow: 0 1em 3em .05em rgb(85, 0, 0);
+}
+
+.navbar-brand {
+    color: var(--white) !important;
+    font-weight: 500;
+}
+
+.nav-link {
+    color: var(--white) !important;
+    transition: 0.3s;
+}
+
+.nav-link:hover {
+    color: rgb(187, 187, 187) !important;
+}
+
+.navbar-collapse ul {
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+/* ----- */
+
+/* Home */
+.home {
+    width: 90%;
+    margin: auto
+}
+
+.home ul {
+    list-style: none;
+}
+
+.home {
+    width: 90%;
+    margin: auto
+}
+
+.post-preview {
+    margin: 1.5em 0;
+    text-decoration: none;
+    display: block;
+    padding: 1.5em;
+    border-bottom: 1px solid var(--dash);
+}
+
+.post-preview a {
+    color: var(--light);
+    transition: 0.3s;
+}
+
+.post-preview a:hover {
+    color: var(--white-hover);
+}
+
+.post-footer-item {
+    color: var(--white-dark);
+    margin: 0 1.5em;
+}
+
+.post-footer-item:first-child {
+    margin: 0;
+}
+
+.post-preview-title {
+
+}
+
+.post-preview-body {
+    color: var(--white-dark);
+}
+
+
+/* Footer */
+footer {
+    border-top: 1px solid var(--dash);
+}
+
+.footer-content {
+    margin: 0 3em;
+}
+
+footer p {
+    color: var(--white-dark);
+    text-align: left;
+}
+
+.footer-item {
+    text-align: center;
+}
+/* --------- */
+
+/* Archive */
+.archive {
+    list-style: none;
+    padding: 2em;
+    margin: 0;
+}
+
+.archive-preview {
+    display: block;
+    color: var(--white);
+    margin: .1em;
+    padding: 0 1em;
+    text-decoration: none;
+}
+
+
+.archive-preview:hover {
+    color: var(--white--hover);
+    background-color: var(--dark-hover);
+}
+
+
+
+/* --------- */
+
+
+/* About */
+#profile-img {
+    width: 15em;
+    border-radius: 50%;
+}

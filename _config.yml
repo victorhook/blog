@@ -18,21 +18,38 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Victor Krook's blog
+title: Hacking Delft
 email: victorkrook96@gmail.com
-description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
-baseurl: "/blog" # the subpath of your site, e.g. /blog
+description: >
+  Here is a blog from my adventure on exchange studies at TU Delft.
+baseurl: "/"
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: none
 github_username:  victorhook
 
 # Build settings
 theme: minima
+
 plugins:
   - jekyll-feed
+  - jekyll-archives
+
+collections:
+  tags:
+    output: true
+    permalink: tags/:path/
+
+jekyll-archives:
+  enabled: [year, month, tag, categories]
+  layouts:
+    year: archive/year
+    month: archive/month
+    tag: archive/tag
+    category: archive/category
+  permalinks:
+    year: '/:year/'
+    month: '/:year/:month/'
+    tag: '/tags/:name/'
+    category: '/category/:name/'
 
 # Exclude from processing.
 # The following items will not be processed, by default.
