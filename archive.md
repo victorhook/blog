@@ -1,16 +1,18 @@
 ---
-layout: archive
+layout: page
+title: archive
 ---
+
+<link href="/assets/css/archive.css" rel="stylesheet">
+
 
 <ul class="archive">
   {% for post in site.posts %}
-    <li>
-      <a class="archive-preview" href="{{ post.url }}">
-        <div class="d-flex align-items-center justify-content-between">
-            <h3>{{ post.title }}</h3>
-            <h6>{{ post.date | date_to_string }} </h6>
+    <li class="archive-post d-flex align-items-center justify-content-between">
+      <a class="archive-preview" href="{{ post.url }}">{{ post.title }}</a>
+        <div>
+        <span class="post-footer-item">{% include post_footer.html %}</span>
         </div>
-      </a>
     </li>
   {% endfor %}
 </ul>

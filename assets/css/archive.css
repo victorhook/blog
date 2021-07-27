@@ -1,0 +1,16 @@
+
+/* Archive */
+.archive {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.archive-preview {
+   font-size: 1.4em;
+    margin: .3em 0;
+}
+
+.archive-post {
+    border-bottom: 1px solid var(--gray-medium);
+}

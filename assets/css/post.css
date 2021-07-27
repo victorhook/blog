@@ -1,0 +1,21 @@
+.post {
+    padding: 2em;
+    box-shadow: 0 0 1em .1em #555555;
+}
+
+.post-info {
+    padding: .5em 0 1em 0;
+    border-bottom: 1px solid var(--gray-medium);
+}
+
+.tag {
+    margin: 0 .3em;
+    border-radius: 5px;
+    padding: .1em .3em;
+    background-color: var(--red);
+    color: var(--gray-light);
+}
+
+.post-body {
+    margin-top: 2em;
+}
