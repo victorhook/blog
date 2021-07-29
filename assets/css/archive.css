@@ -14,3 +14,12 @@
 .archive-post {
     border-bottom: 1px solid var(--gray-medium);
 }
+
+@media screen and (max-width: 800px) {
+    .archive-preview {
+        font-size: 1em;
+    }
+    .post-footer-item  {
+        font-size: .9em;
+    }
+}
