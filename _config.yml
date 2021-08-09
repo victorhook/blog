@@ -11,6 +11,9 @@ github_username:  victorhook
 theme: minima
 permalink: /:categories/:year-:month-:day/:title/
 
+# Needed to allow todays date to show.
+future: true
+
 # Variables
 nav_links:
   - name: mrhookv.com

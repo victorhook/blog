@@ -2,6 +2,12 @@
 layout: base
 ---
 
+<div id="computer">
+  <p id="computer-text">
+  ASD
+  </p>
+</div>
+
 <div class="home">
   <ul>
     {% for post in site.posts limit:site.front_page_posts %}

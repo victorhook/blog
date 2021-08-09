@@ -133,6 +133,37 @@ content {
     color: var(--gray-medium);
 }
 
+/* Computer */
+#computer {
+    display: block;
+    background-color: black;
+    width: fit-content;
+    padding: 1em;
+    border: 5px solid #737473;
+    border-radius: 5px;
+    position: absolute;
+    left: 0;
+}
+
+#computer-text {
+    color: var(--green);
+    padding: 0;
+    margin: 0;
+}
+
+
+#computer::after {
+    content: "";
+    position: absolute;
+    display: block;
+    background-color: #737473;
+    height: 10px;
+    width: 10px;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 12px);
+}
+
 
 /* Footer */
 footer {

@@ -8,6 +8,7 @@ import sys
 
 post = format(
 """\
+---
 layout:      post
 title:       {}
 date:        {}
@@ -32,7 +33,7 @@ def get(name: str) -> str:
 
 def save(date: str, data: str):
     base = Path(__file__).parent
-    filename = date.split(' ')[0] + '-' + title
+    filename = date.split(' ')[0] + '-' + title.replace(' ', '-')
     filepath = str(base.joinpath('_posts').joinpath(filename)) + '.md'
     if os.path.exists(filepath):
         print(f'WARNING: Post "{filepath}" already exists, use a different title.')
