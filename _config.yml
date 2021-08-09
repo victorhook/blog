@@ -2,8 +2,8 @@ title: Hacking Delft
 email: victorkrook96@gmail.com
 description: >
   Here is a blog from my adventure on exchange studies at TU Delft.
-baseurl: "/"
-static_url: "/assets/"
+baseurl: "/blog/"
+static_url: "/blog/assets/"
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 github_username:  victorhook
 
@@ -16,7 +16,7 @@ future: true
 
 # Variables
 nav_links:
-  - name: mrhookv.com
+  - name: portfolio
     url: https://mrhookv.com/
     icon: "bi bi-sunglasses"
 front_page_posts: 2
