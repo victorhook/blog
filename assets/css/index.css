@@ -60,6 +60,15 @@ a:hover {
         width: 100%;
         margin: auto;
     }
+    .navbar-brand {
+        font-size: 1em !important;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .navbar-brand {
+        font-size: .7em !important;
+    }
 }
 
 content {
@@ -80,11 +89,16 @@ content {
 .navbar-brand {
     font-weight: 700;
     font-size: 1.3em;
+    margin-right: 0;
 }
 
 .navbar-collapse ul {
     margin-top: auto;
     margin-bottom: auto;
+}
+
+.navbar-collapse.collapse.show .navlist {
+    flex-direction: column !important;
 }
 
 .favicon {
@@ -98,7 +112,8 @@ content {
 /* Home */
 .home {
     width: 90%;
-    margin: auto
+    margin: auto;
+    padding: 0;
 }
 
 .home ul {
@@ -109,6 +124,18 @@ content {
     width: 90%;
     margin: auto
 }
+
+.front-list {
+    padding: 0;
+}
+
+@media only screen and (max-width: 700px) {
+    .post-preview {
+        padding: .3em 0 !important;
+        font-size: .8em;
+    }
+}
+
 
 .post-preview {
     margin: 1.5em 0;
@@ -173,10 +200,10 @@ content {
 
 @media only screen and (max-width: 500px) {
     #computer-text {
-        font-size: .6em;
+        font-size: .5em;
     }
     #computer {
-        width: 28ch;
+        width: 24ch;
     }
 }
 
@@ -191,8 +218,6 @@ content {
         border-color: transparent
     }
 }
-
-
 
 
 /* Footer */
@@ -224,4 +249,16 @@ footer .bi {
 /* --------- */
 .page-content {
     padding: 2em;
+}
+
+@media screen and (max-width: 800px){
+    .page-content {
+        padding: 1em;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .page-content {
+        padding: 0;
+    }
 }

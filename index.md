@@ -13,7 +13,7 @@ layout: base
     </p>
   </div>
 
-  <ul>
+  <ul class="front-list">
     {% for post in site.posts limit:site.front_page_posts %}
       <li>
         <div class="post-preview">

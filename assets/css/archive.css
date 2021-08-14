@@ -23,3 +23,9 @@
         font-size: .9em;
     }
 }
+
+@media screen and (max-width: 600px) {
+    .archive-preview, .post-footer-item {
+        font-size: .7em;
+    }
+}
