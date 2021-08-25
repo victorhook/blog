@@ -25,10 +25,17 @@
         padding: .3em;
         box-shadow: none;
     }
+    .post-body p {
+        font-size: .8em;
+    }
 }
 
 @media only screen and (max-width: 600px) {
     .post-info {
         font-size: .7em;
     }
+}
+
+.post-title {
+    color: var(--title-color);
 }

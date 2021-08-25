@@ -4,6 +4,7 @@ title:       Preparation
 date:        2021-08-16 11:15:39
 categories:
 tags:
+image:      ppe_pp.svg
 ---
 
 Today it's less than two weeks until I leave. I will fly to Amsterdam on

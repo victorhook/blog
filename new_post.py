@@ -14,6 +14,7 @@ title:       {}
 date:        {}
 categories:  {}
 tags:        {}
+image:       {}
 ---
 
 """)
@@ -53,11 +54,13 @@ if __name__ == '__main__':
         categories = ''
         tags = ''
         date = ''
+        image = ''
     else:
         title = get('Title')
         categories = get('Categories (space separated list)')
         tags = get('Tags (space separated list)')
         date = get('Date (leave blank to use today)')
+        image = get('Front image name: ')
 
     if not date:
         date = datetime.now().strftime('%Y-%m-%d %H:%M:%S')

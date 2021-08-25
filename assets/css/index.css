@@ -9,7 +9,7 @@
     --red: #734B5E;
     --green: #74E223;
     --pink: #F5D3C8;
-
+    --title-color: rgb(12, 12, 12);
     --gray-dark-hover: #000000;
     --gray-medium-hover: #77797c;
     --gray-light-hover: #989899;
@@ -143,6 +143,11 @@ content {
     display: block;
     padding: 1.5em;
     border-bottom: 1px solid var(--gray-medium);
+    transition: 0.3s ease-in-out background-color;
+}
+
+.post-preview:hover {
+    background-color: #e6e9e3;
 }
 
 .post-footer-item {
@@ -155,8 +160,14 @@ content {
 }
 
 .post-preview-title {
-    color: var(--gray-dark);
+    color: var(--title-color);
     font-weight: 600;
+}
+
+.preview-image {
+    max-height: 150px;
+    border-radius: 10px;
+    margin: .3em auto;
 }
 
 .post-preview-body {

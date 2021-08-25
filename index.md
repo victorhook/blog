@@ -20,6 +20,9 @@ layout: base
           <a href="{{ site.baseurl }}{{ post.url }}">
             <h3 class="post-preview-title">{{ post.title }}</h3>
           </a>
+          {% if post.image %}
+          <img class="preview-image" src="{{site.static_url}}images/{{post.image}}" alt="{{ post.title }} image}">
+          {% endif %}
           <p class="post-preview-body">{{ post.excerpt }}</p>
           {% include post_footer.html %}
         </div>

@@ -7,12 +7,17 @@
 }
 
 .archive-preview {
-   font-size: 1.4em;
-    margin: .3em 0;
+    font-size: 1.4em;
+    margin: .3em;
 }
 
 .archive-post {
     border-bottom: 1px solid var(--gray-medium);
+    transition:  0.3s ease-in-out background-color;
+}
+
+.archive-post:hover {
+    background-color: #e6e9e3;
 }
 
 @media screen and (max-width: 800px) {
