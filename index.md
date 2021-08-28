@@ -23,7 +23,7 @@ layout: base
           {% if post.image %}
           <img class="preview-image" src="{{site.static_url}}images/{{post.image}}" alt="{{ post.title }} image}">
           {% endif %}
-          <p class="post-preview-body">{{ post.excerpt }}</p>
+          <p class="post-preview-body">{{ post.content | strip_html | truncatewords: 50 }}</p>
           {% include post_footer.html %}
         </div>
       </li>

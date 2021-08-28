@@ -39,3 +39,12 @@
 .post-title {
     color: var(--title-color);
 }
+
+.post-image figcaption {
+    font-size: .9em;
+    color: #555555;
+}
+
+.post-body a {
+    text-decoration: underline;
+}

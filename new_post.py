@@ -65,5 +65,5 @@ if __name__ == '__main__':
     if not date:
         date = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
 
-    post = post.format(title, date, categories, tags)
+    post = post.format(title, date, categories, tags, image)
     save(date, post)
