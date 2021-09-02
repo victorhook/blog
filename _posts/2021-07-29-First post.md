@@ -1,7 +1,6 @@
 ---
 layout:      post
 title:       Plan
-date:        2021-07-29 16:07:13
 categories:  
 tags:        
 image:       ppe_p.svg

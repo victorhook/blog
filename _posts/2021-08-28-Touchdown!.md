@@ -1,7 +1,6 @@
 ---
 layout:      post
 title:       Touchdown!
-date:        2021-08-28 07:38:12
 categories:
 tags:
 image:       ppe_ppe.svg

@@ -11,7 +11,6 @@ post = format(
 ---
 layout:      post
 title:       {}
-date:        {}
 categories:  {}
 tags:        {}
 image:       {}
@@ -65,5 +64,5 @@ if __name__ == '__main__':
     if not date:
         date = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
 
-    post = post.format(title, date, categories, tags, image)
+    post = post.format(title, categories, tags, image)
     save(date, post)

@@ -1,7 +1,6 @@
 ---
 layout:      post
 title:       Preparation
-date:        2021-08-16 11:15:39
 categories:
 tags:
 image:      ppe_pp.svg

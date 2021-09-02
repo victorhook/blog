@@ -2,7 +2,6 @@
 layout: base
 ---
 
-
 <div class="home d-flex flex-column">
 
   <div id="computer">
