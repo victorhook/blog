@@ -34,9 +34,9 @@ img {
 
 .bi {
     vertical-align: .125em;
-}
+}   
 
-h1, h2, h3, h4, h5, h6, a, p, span {
+h1, h2, h3, h4, h5, h6, a, p, span, li {
     color: var(--gray-dark);
 }
 
@@ -165,9 +165,11 @@ content {
 }
 
 .preview-image {
-    max-height: 150px;
+    max-height: 200px;
     border-radius: 10px;
     margin: .3em auto;
+    object-fit: cover;
+    object-position: 50% bottom;
 }
 
 .post-preview-body {

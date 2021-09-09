@@ -40,6 +40,10 @@
     color: var(--title-color);
 }
 
+.post-image {
+    margin: 2em auto;
+}
+
 .post-image figcaption {
     font-size: .9em;
     color: #555555;
