@@ -5,7 +5,7 @@ dev:
 run: dev
 
 new:
-	./new_post.py
+	scripts/new_post.py
 
 push:
 	git add _posts/
