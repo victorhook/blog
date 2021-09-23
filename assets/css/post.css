@@ -52,3 +52,7 @@
 .post-body a {
     text-decoration: underline;
 }
+
+hr {
+    margin: 2em 0;
+}

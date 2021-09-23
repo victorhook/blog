@@ -8,11 +8,18 @@
     border-radius: 15px;
     border: 2px solid var(--green);
     box-shadow: .5em 1em 2em .01em rgb(158, 158, 158);
+    transition: 0.3s ease-in-out transform;
 }
+
+.archive-post-data:hover {
+    transform: scale(1.05);
+}
+
 .chain {
     display: block;
     height: 50px;
     width: 10px;
+    z-index: -10;
     background: repeating-linear-gradient(
         45deg,
         var(--green),

@@ -16,3 +16,6 @@ update:
 	git add _posts/
 	git commit --no-edit --amend
 	git push -f
+
+trim:
+	scripts/trim_images.py
