@@ -15,16 +15,16 @@ layout: base
   <ul class="front-list">
     {% for post in site.posts limit:site.front_page_posts %}
       <li>
+        <a href="{{ site.baseurl }}{{ post.url }}">
         <div class="post-preview">
-          <a href="{{ site.baseurl }}{{ post.url }}">
             <h3 class="post-preview-title">{{ post.title }}</h3>
-          </a>
           {% if post.image %}
           <img class="preview-image" src="{{site.static_url}}images/{{post.image}}" alt="{{ post.title }} image}">
           {% endif %}
           <p class="post-preview-body">{{ post.content | strip_html | truncatewords: 50 }}</p>
           {% include post_footer.html %}
         </div>
+        </a>
       </li>
     {% endfor %}
   </ul>

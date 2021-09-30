@@ -1,0 +1,148 @@
+
+<style>
+    #fourier {
+        width: 100%;
+        height: 500px;
+        margin: auto;
+        border: 1px solid gray;
+    }
+</style>
+
+<canvas id="fourier"></canvas>
+
+
+<script>
+    const canvas = document.getElementById('fourier');
+    const ctx = canvas.getContext('2d');
+    canvas.width = canvas.clientWidth;
+    canvas.height = canvas.clientHeight;
+    const cx = Math.round(canvas.width/2);
+    const cy = Math.round(canvas.height/2) - 100;
+
+    class Cosine {
+        constructor(freq, mag, phase) {
+            this.freq  = freq;
+            this.mag   = mag;
+            this.phase = phase;
+            this.color = 'red';
+        }
+        update(time) {
+            this.phase -= this.freq*time;
+        }
+        getTip(x, y) {
+            return {
+                x: x + this.mag*Math.cos(this.phase),
+                y: y + this.mag*Math.sin(this.phase)
+            }
+        }
+        render(ctx, x, y) {
+            ctx.beginPath();
+            ctx.moveTo(x, y);
+            let tip = this.getTip(x, y);
+            ctx.strokeStyle = 'black';
+            ctx.lineWidth = 2;
+
+            ctx.lineTo(tip.x, tip.y);
+
+            ctx.moveTo(tip.x, tip.y);
+            ctx.lineTo(tip.x-this.mag*.2*Math.cos(this.phase-Math.PI/6), tip.y-this.mag*.2*Math.sin(this.phase-Math.PI/6));
+
+            ctx.moveTo(tip.x, tip.y);
+            ctx.lineTo(tip.x-this.mag*.2*Math.cos(this.phase+Math.PI/6), tip.y-this.mag*.2*Math.sin(this.phase+Math.PI/6));
+
+            ctx.stroke();
+            ctx.closePath();
+        }
+    }
+
+    class Point {
+        constructor(x, y) {
+            this.x = x;
+            this.y = y;
+        }
+    }
+
+    class Wave {
+        constructor(N) {
+            this.x = [];
+            for (let i = 0; i < N; i++) {
+                this.x.push(null);
+            }
+        }
+        add(point) {
+            this.x.push(point);
+            this.x.shift();
+        }
+        update(time) {
+            this.x.forEach(p => {
+                if (p != null) {
+                    p.y += 30*time;
+                }
+            })
+        }
+        render(ctx) {
+            let p = this.x[this.x.length-1];
+            if (p == null)
+                return;
+
+            ctx.beginPath();
+            ctx.moveTo(p.x, p.y);
+            ctx.strokeStyle = 'red';
+            ctx.lineWidth = 5;
+
+            for (let i = this.x.length-1; i >= 0; i--) {
+                p = this.x[i];
+                if (p == null)
+                    continue;
+                ctx.lineTo(p.x, p.y);
+            }
+
+            ctx.stroke();
+            ctx.closePath();
+        }
+    }
+
+    const A = 70;
+    const cosines = [
+        new Cosine(2, A, 0),
+        new Cosine(-2, A, 0),
+        new Cosine(3, .5*A, 0),
+        new Cosine(-3, .5*A, 0),
+        new Cosine(4, .3*A, 0),
+        new Cosine(-4, .3*A, 0),
+    ];
+    const wave = new Wave(1500);
+
+    let lastTime = 0;
+
+
+    function animate(time) {
+        let elapsedTime = (time - lastTime) / 1000;
+        lastTime = time;
+
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+        cosines.forEach(cosine => cosine.update(elapsedTime));
+
+        let first = cosines[0];
+        first.render(ctx, cx, cy);
+        let tip = first.getTip(cx, cy);
+
+        for (let i = 1; i < cosines.length; i++) {
+            cosines[i].render(ctx, tip.x, tip.y);
+            tip = cosines[i].getTip(tip.x, tip.y);
+        }
+
+        wave.add(new Point(tip.x, tip.y));
+        wave.update(elapsedTime);
+        wave.render(ctx);
+
+
+        requestAnimationFrame(time => animate(time));
+    }
+
+    animate(0);
+
+
+
+
+</script>

@@ -144,11 +144,12 @@ content {
     display: block;
     padding: 1.5em;
     border-bottom: 1px solid var(--gray-medium);
-    transition: 0.3s ease-in-out background-color;
+    transition: 0.3s ease-in-out all;
 }
 
 .post-preview:hover {
-    background-color: #e6e9e3;
+    background-color: #e0e0e0;
+    transform: scale(1.01);
 }
 
 .post-footer-item {
