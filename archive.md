@@ -9,12 +9,14 @@ title: archive
 <ul class="archive" id="archive-list">
   {% for post in site.posts %}
     <li class="archive-post d-flex align-items-center justify-content-between">
-      <div class="archive-post-data">
-      <a class="archive-preview" href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
-        <div>
-        <span class="post-footer-item">{% include post_footer.html %}</span>
+      <a class="archive-preview" href="{{ site.baseurl }}{{ post.url }}">
+        <div class="archive-post-data">
+          {{ post.title }}
+          <div>
+          <span class="post-footer-item">{% include post_footer.html %}</span>
+          </div>
         </div>
-      </div>
+      </a>
       {% if forloop.last == false %}
         <span class="chain"></span>
       {% endif %}

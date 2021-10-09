@@ -12,7 +12,7 @@ if __name__ == '__main__':
     images = base.joinpath('assets').joinpath('images')
     total_trimmed = 0
     for img in os.listdir(str(images)):
-        if img.lower().endswith('jpg'):
+        if img.lower().endswith('jpg') or img.lower().endswith('png'):
             img_path = images.joinpath(img)
             size = img_path.stat().st_size
             if size > IMAGE_SIZE_THRESH_HOLD:
