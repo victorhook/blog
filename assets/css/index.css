@@ -30,7 +30,7 @@ body {
 }
 
 img {
-    width: 100%;
+    max-width: 100%;
 }
 
 .bi {
@@ -167,6 +167,7 @@ content {
 }
 
 .preview-image {
+    width: 100%;
     max-height: 200px;
     border-radius: 10px;
     margin: .3em auto;

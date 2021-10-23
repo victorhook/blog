@@ -7,7 +7,7 @@ permalink: /about/
 <link href="{{ site.static_url }}css/about.css" rel="stylesheet">
 
 <div class="about-image">
-    <img style="border-radius: 50%;" id="profile-pic" src="{{ site.static_url }}images/profile.JPG">
+    <img style="border-radius: 50%;" id="profile-pic" src="{{ site.static_url }}images/portait_small.jpg">
 </div>
 
 <p class="about-body">
