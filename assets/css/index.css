@@ -35,7 +35,7 @@ img {
 
 .bi {
     vertical-align: .125em;
-}   
+}
 
 h1, h2, h3, h4, h5, h6, a, p, span, li {
     color: var(--gray-dark);
@@ -204,6 +204,16 @@ content {
     border-right: 3px solid;
 }
 
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+}
+
+@keyframes blink {
+    from, to { border-color: transparent }
+    50% { border-color: var(--green); }
+}
+
 @media only screen and (max-width: 700px) {
     #computer-text {
         font-size: .8em;
@@ -220,18 +230,6 @@ content {
     }
     #computer {
         width: 24ch;
-    }
-}
-
-@keyframes typing {
-    from {
-        width: 0
-    }
-}
-
-@keyframes blink {
-    50% {
-        border-color: transparent
     }
 }
 
