@@ -41,7 +41,7 @@ who was also going abroad for exchange studies. Living together with other peopl
 was completely new for me (not including family) and for a person who is very fond
 of his privacy, it was definitely a challenge.
 
-Regardless, life goes and and you get used to things, and while I was getting used
+Regardless, life goes and you get used to things, and while I was getting used
 to the idea of living abroad, I was very excited to start my studies!
 My idea was to take a minor, in **Electronics for Robotics**,
 which contained a package of courses that were all related to Electrical Engineering.
@@ -79,7 +79,7 @@ and keep connection with my family.
 As usual during the autumn, time went fast and eventually Christmas was coming up. At the 21:st of
 December, I flew home for Christmas break. At this point I hadn't left Delft since I arrived,
 about 4 months earlier. I remember that it felt very weird to come home again,
-and noticed how much *"at home"*, However, it was very nice to come home again,
+and I noticed how much *"at home"* I had started to feel in Delft. However, it was very nice to come home again,
 and to celebrate the Christmas with my family. We even got a white Christmas,
 which is pretty rare for where I live in Sweden!
 
@@ -97,7 +97,7 @@ more detail, feel free to follow the entire journey, starting from my
 [first post]({% post_url 2021-07-29-First post %}) of the blog 😃.
 
 If you're any curious to how the exams went, I passed all courses with a grade
-between 8 and 9.5 out of 10. This felt really good and I'm very satisfied with how it went.
+between 8 and 9.5 out of 10. This felt really good and I'm very proud with how it went.
 
 ---
 
@@ -111,7 +111,7 @@ Here's answers to some questions that might be interesting!
 - Exploring a new city and a completely new country was very exciting. I love to travel, so in some ways, the exchange was one very long travelling adventure!
 
 ## What was the worst thing(s) about the exchange?
-- Being far away from my partner and my family was the definitely the hardest part of the exchange. Like everything, you get used to it, but unfortunately that doesn't make it suck any less.
+- Being far away from my partner and my family was definitely the hardest part of the exchange. Like everything, you get used to it, but unfortunately that doesn't make it suck any less.
 
 ## What did you learn from the exchange?
 From a technical perspective, I've learnt:
@@ -133,7 +133,7 @@ by myself, in a different country, and I remember that before going home for Chr
 I remember thinking that this was pretty cool and the only thing that I missed was my partner and my family. If they
 had all moved to Delft, I think most things would be as normal.
 - I've found where some of my bigger priorities in life are. I think it's important to do something exciting and important in life,
-so what I do for living in the future should matter. However, during the exchange I have also come to the realization that for me,
+so what I do for a living in the future should matter. However, during the exchange I have also come to the realization that for me,
 life is more than just work, or studies. To me, life is also about hanging out with other people, whether it's your family
 or friend I don't think really matters. To me, life is about exploring new places, and trying out new
 foods and new drinks. To me, life should be a combination of doing something useful (eg during your job), but
@@ -231,7 +231,7 @@ DO IT!
 
 {% include image.html url="final/IMG_2231.JPG" description="In Delft they like narrow streets! And sometimes, some street art."%}
 
-{% include image.html url="final/IMG_2287.JPG" description="Here I was so shocked to find myself on the campus area. The photo was taken on one of the lectures of the photography course, but the teacher never mentioned that we would be put on the campus area for a few weeks. 😃"%}
+{% include image.html url="final/IMG_2287.JPG" description="Here I was so shocked to find myself on the campus area. The photo on the board was taken during on one of the lectures of the photography course, but the teacher never mentioned that it would be put on the campus area for a few weeks...😃"%}
 
 {% include image.html url="final/IMG_2294.JPG" description="My faculty building EWI/EEMCS, photo taken from the roof of the library, and yep, there's grass on the roof!"%}
 
@@ -282,4 +282,4 @@ and gotten to know myself better and what my priorities in life are.
 
 I'll end with a quote from myself:
 
-*If you're ever feeling down, then you should go to Delft, buy a stroopwaffel, buy a coffee, and a beer, and realize that life is actually pretty good sometimes.*
+"*If you're ever feeling down, then you should go to Delft, buy a stroopwaffel, buy a coffee, and a beer, and realize that life is actually pretty good sometimes.*" - Victor Krook
